@@ -1,0 +1,23 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solidjs/router": "^0.15.0",
+    "solid-js": "^1.9.3",
+    "solid-styled": "^0.11.1"
+  },
+  "devDependencies": {
+    "unplugin-solid-styled": "^0.11.1",
+    "vite": "^5.4.10",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}
