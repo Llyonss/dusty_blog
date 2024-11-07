@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import solidStyled from 'unplugin-solid-styled';
 import solid from 'vite-plugin-solid'
+import * as path from 'path'
 
 export default defineConfig({
   plugins: [
@@ -13,4 +14,9 @@ export default defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 })

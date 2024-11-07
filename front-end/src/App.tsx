@@ -1,17 +1,17 @@
 
-import { createSignal } from 'solid-js'
+import { For } from 'solid-js'
 import type { JSX } from 'solid-js';
 import { Router, Route } from "@solidjs/router";
-import LandingPage from './pages/landing-page/LandingPage';
-
+import routes from '@/routes';
 function App(): JSX.Element {
     return (
         <>
             <Router>
-                <Route path="/" component={LandingPage} />
+                <For each={routes}>{({ path, component }) => (
+                    <Route path={path} component={component} />
+                )}</For>
             </Router>
         </>
     )
 }
-
 export default App
